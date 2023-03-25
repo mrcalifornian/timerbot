@@ -8,7 +8,7 @@ const bot = new TelegramBot(TOKEN, { polling: true });
 
 bot.on('text', body => {
     let now = new Date();
-    let hour = now.getHours();
+    let hour = now.getHours() + 5;
     let minute = now.getMinutes();
 
     if (body.from.id == USER) {
