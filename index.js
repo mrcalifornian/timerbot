@@ -18,7 +18,7 @@ bot.on('text', body => {
 
 let sendHourly = () => {
     let now = new Date();
-    let hour = now.getHours();
+    let hour = now.getHours() + 5;
     let minute = now.getMinutes();
 
     if (hour == 0 && minute == 0) {
